@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>todos</h1>
+
+		<div class="new-todo">
+			<input id="select-all" name="select-all" type="checkbox">
+			<input id="new-todo" name="newTodo" type="text" placeholder="What needs to be done?" autofocus>
+		</div>
+
+		<ul class='todo-list hidden'>
+
+		</ul>
+		
+		<footer class='hidden'>
+			<ul class="details">
+				<li><span class='todo-count'>0</span> left</li>
+				<li class='filters'><a href='#/' class='selected'>all</a></li>
+				<li class='filters'><a href='#/active'>active</a></li>
+				<li class='filters'><a href='#/completed'>completed</a></li>
+			</ul>
+		</footer>
+
+		<p class='info'>Use shift + click to select multiple complete multiple todos</p>
+		<p class='info'>Press del key to delete completed todos</p>
+
+		<script src='app.js'></script>
+	</body>
+</html>
