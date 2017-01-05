@@ -113,7 +113,7 @@ todoList.addEventListener('dblclick', e => {
 		input.addEventListener('change', function(e) {
 			const text = this.value;
 			source.removeChild(this);
-			source.textContent = text;
+			text ? source.textContent = text : source.parentNode.parentNode.removeChild(source.parentNode);
 		});
 	}
 });
